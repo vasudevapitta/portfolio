@@ -38,7 +38,7 @@
 	  display: flex;
 	  justify-content: flex-end;
 	  padding: 0 40px 10px 0;
-	  font: normal 15px 'franklin gothic', "open-sans";
+	  font: normal 15px 'helvetica', "open-sans";
 	}
 }
 
@@ -81,7 +81,7 @@
 	  display: flex;
 	  justify-content: flex-end;
 	  padding: 0 40px 10px 0;
-	  font: normal 15px 'franklin gothic', "open-sans";
+	  font: normal 15px 'helvetica', "open-sans";
 	}
 }
 
@@ -127,7 +127,7 @@
 	  display: flex;
 	  justify-content: flex-end;
 	  padding: 0 40px 10px 0;
-	  font: normal 15px 'franklin gothic', "open-sans";
+	  font: normal 15px 'helvetica', "open-sans";
 	}
 }
 
@@ -172,7 +172,7 @@
 	  display: flex;
 	  justify-content: flex-end;
 	  padding: 0 40px 10px 0;
-	  font: normal 15px 'franklin gothic', "open-sans";
+	  font: normal 15px 'helvetica', "open-sans";
 	}
 }
 
@@ -217,14 +217,14 @@
 	  display: flex;
 	  justify-content: flex-end;
 	  padding: 0 10px 10px 0;
-	  font: normal 15px 'franklin gothic', "open-sans";
+	  font: normal 15px 'helvetica', "open-sans";
 	}
 }
 
 body {
   width: 100%;
   margin: 0 auto;
-  font: normal 20px/1.5 'franklin gothic', "open-sans";
+  font: normal 20px/1.5 'helvetica', "open-sans";
   background-color: #e8e8e8;
 }
 
@@ -326,5 +326,5 @@ footer {
 	height: 40px;
 	background-color: #aeaeae;
 	align-items: center;
-	font: normal 12px 'franklin gothic', "open-sans";
+	font: normal 12px 'helvetica', "open-sans";
 }
