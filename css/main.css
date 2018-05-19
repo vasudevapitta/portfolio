@@ -1,5 +1,17 @@
-@media screen and (min-width: 1000px) {
-  figure {
+@media screen and (min-width: 1100px) {
+
+	#logo {
+	  width: 10%;
+  	  padding: 5px 0;
+	}
+
+	#logo img {
+  	  margin-left: -10px;
+      margin-bottom: -10px;
+      width: 50%;
+	}
+
+  	figure {
 	  flex-shrink: 0.5;
 	  width: 40%;
 	}
@@ -21,27 +33,73 @@
 	  background-color: #fff;
 	}
 
-	footer {
+	.scrollUp {
+	  cursor: pointer;
 	  display: flex;
-	  justify-content: center;
-	  height: 40px;
-	  background-color: #aeaeae;
-	  text-align: center;
-	  align-items: center;
+	  justify-content: flex-end;
+	  padding: 0 40px 10px 0;
 	  font: normal 15px 'franklin gothic', "open-sans";
 	}
+}
 
-	footer div:first-child {
-	  width: 90%;
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+	#logo {
+	  width: 15%;
+  	  padding: 5px 0;
 	}
 
-	footer div::nth-child(2) {
-	  width: 10%;
+	#logo img {
+  	  margin-left: -10px;
+      margin-bottom: -10px;
+      width: 50%;
+	}
+
+  	figure {
+	  flex-shrink: 0.5;
+	  width: 40%;
+	}
+
+	.works {
+	  display: flex;
+	  justify-content: center;
+	  flex-wrap: nowrap;
+	}
+
+	header {
+	  width: 100%;
+	  margin: 0 auto;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  flex-direction: row;
+	  text-align: center;
+	  background-color: #fff;
+	}
+
+	.scrollUp {
+	  cursor: pointer;
+	  display: flex;
+	  justify-content: flex-end;
+	  padding: 0 40px 10px 0;
+	  font: normal 15px 'franklin gothic', "open-sans";
 	}
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px){
-  figure {
+
+	#logo {
+	  width: 20%;
+  	  padding: 5px 0;
+	}
+	
+	#logo img {
+  	  margin-left: -20px;
+      margin-bottom: -5px;
+      margin-top: 10px;
+      width: 50%;
+	}
+
+  	figure {
 	  flex-shrink: 0.5;
 	  width: 39%;
 	  border-radius: 10px;
@@ -64,26 +122,28 @@
 	  background-color: #fff;
 	}
 
-	footer {
+	.scrollUp {
+	  cursor: pointer;
 	  display: flex;
-	  justify-content: center;
-	  height: 40px;
-	  background-color: #aeaeae;
-	  text-align: center;
-	  align-items: center;
+	  justify-content: flex-end;
+	  padding: 0 40px 10px 0;
 	  font: normal 15px 'franklin gothic', "open-sans";
-	}
-
-	footer div:first-child {
-	  width: 80%;
-	}
-
-	footer div::nth-child(2) {
-	  width: 20%;
 	}
 }
 
 @media screen and (max-width: 745px){
+
+	#logo {
+	  width: 20%;
+  	  padding: 5px 0;
+	}
+
+	#logo img {
+  	  margin-bottom: -10px;
+  	  margin-top: 10px;
+  	  width: 50%;
+	}
+
 	header {
 	  width: 100%;
 	  margin: 0 auto;
@@ -107,27 +167,28 @@
 	  flex-wrap: wrap;
 	}
 
-	footer {
+	.scrollUp {
+	  cursor: pointer;
 	  display: flex;
-	  justify-content: center;
-	  height: 40px;
-	  background-color: #aeaeae;
-	  text-align: center;
-	  align-items: center;
-	  font: normal 12px 'franklin gothic', "open-sans";
+	  justify-content: flex-end;
+	  padding: 0 40px 10px 0;
+	  font: normal 15px 'franklin gothic', "open-sans";
 	}
-
-	footer div:first-child {
-	  width: 80%;
-	}
-
-	footer div::nth-child(2) {
-	  width: 20%;
-	}
-
 }
 
 @media screen and (max-width: 500px){
+	
+	#logo {
+	  width: 40%;
+  	  padding: 5px 0;
+	}
+
+	#logo img {
+  	  margin-bottom: -10px;
+  	  margin-top: 10px;
+  	  width: 50%;
+	}
+
 	header {
 	  width: 100%;
 	  margin: 0 auto;
@@ -151,24 +212,13 @@
 	  flex-wrap: wrap;
 	}
 
-	footer {
+	.scrollUp {
+	  cursor: pointer;
 	  display: flex;
-	  justify-content: center;
-	  height: 40px;
-	  background-color: #aeaeae;
-	  text-align: center;
-	  align-items: center;
-	  font: normal 12px 'franklin gothic', "open-sans";
+	  justify-content: flex-end;
+	  padding: 0 10px 10px 0;
+	  font: normal 15px 'franklin gothic', "open-sans";
 	}
-
-	footer div:first-child {
-	  width: 80%;
-	}
-
-	footer div::nth-child(2) {
-	  width: 20%;
-	}
-
 }
 
 body {
@@ -176,16 +226,6 @@ body {
   margin: 0 auto;
   font: normal 20px/1.5 'franklin gothic', "open-sans";
   background-color: #e8e8e8;
-}
-
-#logo {
-  padding: 5px 0;
-}
-
-#logo img {
-  margin-bottom: -10px;
-  margin-top: 10px;
-  width: 50%;
 }
 
 p.my-name {
@@ -234,8 +274,9 @@ figure img:hover {
   transition: 0.3s ease;
 }
 
-.scrollUp {
-    cursor: pointer;
+.scrollUp:hover {
+  opacity: 0.5;
+  transition: 0.3s ease;
 }
 
 .inner-about-me {
@@ -248,4 +289,13 @@ figure img:hover {
 
 .featured-works h1 {
 	text-decoration: underline;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	background-color: #aeaeae;
+	align-items: center;
+	font: normal 12px 'franklin gothic', "open-sans";
 }
