@@ -1,8 +1,10 @@
+/* Font downloaded from dafont.com */
 @font-face {
     font-family: "BeautyDemo";
     src: url("../fonts/BeautyDemo.ttf") format("truetype");
     }
 
+/* For Desktop */
 @media screen and (min-width: 1100px) {
 
 	#logo {
@@ -13,7 +15,7 @@
 	#logo img {
   	  margin-left: -10px;
       margin-bottom: -10px;
-      width: 50%;
+      width: 60%;
 	}
 
   	figure {
@@ -47,6 +49,7 @@
 	}
 }
 
+/* For iPad - Landscape mode and iPad Pro - Portrait mode*/
 @media screen and (min-width: 1000px) and (max-width: 1100px){
 	#logo {
 	  width: 15%;
@@ -56,7 +59,7 @@
 	#logo img {
   	  margin-left: -10px;
       margin-bottom: -10px;
-      width: 50%;
+      width: 60%;
 	}
 
   	figure {
@@ -90,6 +93,7 @@
 	}
 }
 
+/* For iPad */
 @media screen and (min-width: 700px) and (max-width: 1000px){
 
 	#logo {
@@ -101,7 +105,7 @@
   	  margin-left: -20px;
       margin-bottom: -5px;
       margin-top: 10px;
-      width: 50%;
+      width: 60%;
 	}
 
   	figure {
@@ -135,7 +139,7 @@
 	  font: normal 15px 'helvetica', "sans-serif";
 	}
 }
-
+/* For All Mobile - Landscape mode*/
 @media screen and (max-width: 745px){
 
 	#logo {
@@ -146,7 +150,7 @@
 	#logo img {
   	  margin-bottom: -10px;
   	  margin-top: 10px;
-  	  width: 50%;
+  	  width: 60%;
 	}
 
 	header {
@@ -181,6 +185,7 @@
 	}
 }
 
+/* For All Mobile - Portrait Mode*/
 @media screen and (max-width: 500px){
 	
 	#logo {
@@ -234,8 +239,7 @@ body {
 }
 
 p.my-name {
-  font: normal 50px 'BeautyDemo','helvetica', "sans-serif";
-  line-height: 0px;
+  font: normal 50px/0 'BeautyDemo','helvetica', "sans-serif";
 }
 
 .name-title h5{
