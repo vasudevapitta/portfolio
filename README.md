@@ -16,7 +16,8 @@ I followed the Google's udacity style guide to maintain a clean format with prop
 
 I added comments for myself and other people who read my code.
 
-I used the latest ES6 syntax in JavaScript.
+I used jQuery with the latest ES6 syntax in JavaScript.
+
 
 Check out the live version
 https://vasudevapitta.github.io/New-Responsive-Portfolio/
