@@ -111,6 +111,7 @@
   	figure {
 	  flex-shrink: 0.5;
 	  width: 39%;
+	  border-radius: 10px;
 	}
 
 	.works {
@@ -213,6 +214,7 @@
 	figure {
 	  flex-shrink: 0;
 	  width: 100%;
+	  padding: 0;
 	}
 
 	.works {
@@ -257,7 +259,7 @@ p.my-name {
   text-align: center;
   margin: 0 auto;
 }
- 
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -280,13 +282,6 @@ figure img:hover {
   opacity: 0.5;
   background-color: #fff;
   transition: 0.3s ease;
-}
-
-figure {
-  background-color: #fff;
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
 }
 
 .scrollUp:hover {
@@ -344,8 +339,4 @@ footer {
 	background-color: #aeaeae;
 	align-items: center;
 	font: normal 12px 'helvetica', "sans-serif";
-}
-
-.featured-works {
-  padding: 15px 0;
 }
