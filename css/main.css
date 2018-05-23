@@ -1,3 +1,7 @@
+img, embed, object, video {
+	max-width: 100%;
+}
+
 /* Font downloaded from dafont.com */
 @font-face {
     font-family: "BeautyDemo";
