@@ -86,7 +86,7 @@ function scrollAbout(){
 
 
 // Portfolio Button Event handlers
-const prtflioBtn = $("#portfolioButton");
+var prtflioBtn = $("#portfolioButton");
 
 prtflioBtn.click(function() {
 	scrollPortfolio();
