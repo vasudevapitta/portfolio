@@ -78,9 +78,7 @@ function scrollAbout(){
 		}
 
 		else{
-			document.querySelector('#about').scrollIntoView({ 
-		  	behavior: 'smooth' 
-			});
+			window.scroll(0,794);
 		}
 }
 
@@ -108,9 +106,7 @@ function scrollPortfolio(){
 		}
 
 		else {
-		document.querySelector('#portfolio').scrollIntoView({ 
-		  behavior: 'smooth' 
-		});
+		window.scroll(0,1250);
 		}
 }
 
