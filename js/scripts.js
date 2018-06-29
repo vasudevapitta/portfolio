@@ -49,9 +49,10 @@ hmeButtnScrllup.keypress(function(ev) {
 });
 
 function scrollTop(){
-	document.querySelector('#logo').scrollIntoView({ 
-  	behavior: 'smooth' 
-	});
+window.scroll({
+  top: 0, 
+  behavior: 'smooth' 
+});
 }
 
 
