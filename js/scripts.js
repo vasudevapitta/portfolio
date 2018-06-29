@@ -1,9 +1,95 @@
 $(()=>{
-	
-$(".scrollUp").on("click", function(){
+// Opera 8.0+
+var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+// Safari 3.0+ "[object HTMLElementConstructor]" 
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+// Internet Explorer 6-11
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+// Edge 20+
+var isEdge = !isIE && !!window.StyleMedia;
+
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+// Blink engine detection
+var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+$("#homeButton, .scrollUp").on("click", function(){
   document.querySelector('#logo').scrollIntoView({ 
   behavior: 'smooth' 
 });
+});
+
+$("#aboutMeButton").on('click', function(event) {
+
+		if(isChrome || isFirefox){
+			window.scroll({
+		  	top: 794,
+		  	behavior: "smooth"
+			});
+		}
+
+		else{
+			document.querySelector('#about').scrollIntoView({ 
+		  	behavior: 'smooth' 
+			});
+		}
+
+});
+
+
+
+$("#portfolioButton").on('click', function(event) {
+
+		if(isChrome || isFirefox){
+			window.scroll({
+		  	top: 1359,
+		  	behavior: "smooth"
+			});
+		}
+
+		else {
+		document.querySelector('#portfolio').scrollIntoView({ 
+		  behavior: 'smooth' 
+		});
+		}
+
+});
+
+$("#contactButton").on('click', function(event) {
+
+		if(isChrome || isFirefox){
+			window.scroll({
+		  	top: 1743,
+		  	behavior: "smooth"
+			});
+		}
+
+		else {
+			document.querySelector('#contactInfo').scrollIntoView({ 
+		  	behavior: 'smooth' 
+			});
+		}
+
 });
 
 $('.one').click(function(){

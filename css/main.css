@@ -28,12 +28,14 @@ img, embed, object, video {
 	}
 
 	.works {
+	  margin-top: -30px;
 	  display: flex;
 	  justify-content: center;
 	  flex-wrap: nowrap;
 	}
 
 	header {
+	  height: 135px;
 	  width: 100%;
 	  margin: 0 auto;
 	  display: flex;
@@ -41,14 +43,12 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: row;
 	  text-align: center;
-	  background-color: #fff;
+	  background-color: #51c1ff;
 	}
 
 	.scrollUp {
 	  cursor: pointer;
-	  display: flex;
-	  justify-content: flex-end;
-	  padding: 0 40px 10px 0;
+	  padding: 5px 0;
 	  font: normal 15px 'helvetica', "sans-serif";
 	}
 }
@@ -72,6 +72,7 @@ img, embed, object, video {
 	}
 
 	.works {
+	  margin-top: -30px;
 	  display: flex;
 	  justify-content: center;
 	  flex-wrap: nowrap;
@@ -85,7 +86,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: row;
 	  text-align: center;
-	  background-color: #fff;
+	  background-color: #51c1ff;
 	}
 
 	.scrollUp {
@@ -119,6 +120,7 @@ img, embed, object, video {
 	}
 
 	.works {
+	  margin-top: -30px;
 	  display: flex;
 	  justify-content: center;
 	  flex-wrap: wrap;
@@ -132,7 +134,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: row;
 	  text-align: center;
-	  background-color: #fff;
+	  background-color: #51c1ff;
 	}
 
 	.scrollUp {
@@ -166,7 +168,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: column;
 	  text-align: center;
-	  background-color: #fff;
+	  background-color: #51c1ff;
 	}
 
 	figure {
@@ -176,6 +178,7 @@ img, embed, object, video {
 	}
 
 	.works {
+	  margin-top: -30px;
 	  display: flex;
 	  justify-content: center;
 	  flex-wrap: wrap;
@@ -212,7 +215,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: column;
 	  text-align: center;
-	  background-color: #fff;
+	  background-color: #51c1ff;
 	}
 
 	figure {
@@ -222,6 +225,7 @@ img, embed, object, video {
 	}
 
 	.works {
+	  margin-top: -30px;
 	  display: flex;
 	  justify-content: center;
 	  flex-wrap: wrap;
@@ -248,7 +252,7 @@ p.my-name {
 }
 
 .name-title h5{
-  color: #a5a5a5;  
+  color: #000;  
 }
 
 .hero-img img {
@@ -257,19 +261,24 @@ p.my-name {
   display: block;
 }
 
-.about-me,
+.outerInfo,
 .featured-works {
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
 
-.about-me {
+.outerInfo {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
   background-color: #fff;
-  padding: 10px 0;
+  padding: 100px 0 40px 0;
+}
+
+#contactOuterInfo {
+  padding: 40px 0;
 }
 
 .works h3 {
@@ -293,7 +302,7 @@ figure img:hover {
   transition: 0.3s ease;
 }
 
-.inner-about-me {
+.innerInfo {
 	width: 90%;
 }
 
@@ -343,4 +352,62 @@ footer {
 	background-color: #aeaeae;
 	align-items: center;
 	font: normal 12px 'helvetica', "sans-serif";
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #000;
+  font-size: 17px;
+  z-index: 1;
+}
+
+.button{
+  cursor: pointer;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  line-height: 0.5;
+}
+
+.button:hover {
+  background-color: #4c4c4c;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.imgDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mypic {
+	position: absolute;
+	transform: translateY(-10px);
+	background-image: url("../images/mypic.png");
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 4px solid #949494;
+	-webkit-box-shadow: -1px 4px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 9px 0px rgba(0,0,0,0.75);
 }
