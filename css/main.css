@@ -47,6 +47,7 @@ img, embed, object, video {
 	}
 
 	.scrollUp {
+	  color: #6d6d6d;
 	  cursor: pointer;
 	  padding: 5px 0;
 	  font: normal 15px 'helvetica', "sans-serif";
@@ -90,6 +91,7 @@ img, embed, object, video {
 	}
 
 	.scrollUp {
+	  color: #6d6d6d;
 	  cursor: pointer;
 	  display: flex;
 	  justify-content: flex-end;
@@ -138,6 +140,7 @@ img, embed, object, video {
 	}
 
 	.scrollUp {
+	  color: #6d6d6d;
 	  cursor: pointer;
 	  display: flex;
 	  justify-content: flex-end;
@@ -185,6 +188,7 @@ img, embed, object, video {
 	}
 
 	.scrollUp {
+	  color: #6d6d6d;
 	  cursor: pointer;
 	  display: flex;
 	  justify-content: flex-end;
@@ -232,6 +236,7 @@ img, embed, object, video {
 	}
 
 	.scrollUp {
+	  color: #6d6d6d;
 	  cursor: pointer;
 	  display: flex;
 	  justify-content: flex-end;
@@ -346,10 +351,11 @@ figure img:hover {
 }
 
 footer {
+	color: #fff;
 	display: flex;
 	justify-content: center;
 	height: 40px;
-	background-color: #aeaeae;
+	background-color: #000;
 	align-items: center;
 	font: normal 12px 'helvetica', "sans-serif";
 }

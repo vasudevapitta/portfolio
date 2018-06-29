@@ -5,8 +5,8 @@ var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.user
 // Firefox 1.0+
 var isFirefox = typeof InstallTrigger !== 'undefined';
 
-// Safari 3.0+ "[object HTMLElementConstructor]" 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+// Safari 3.0+ "[object HTMLElementvarructor]" 
+var isSafari = /varructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
 // Internet Explorer 6-11
 var isIE = /*@cc_on!@*/false || !!document.documentMode;
@@ -20,6 +20,7 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 // Blink engine detection
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
+//Sticky Navigation
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -33,14 +34,42 @@ function myFunction() {
   }
 }
 
-$("#homeButton, .scrollUp").on("click", function(){
-  document.querySelector('#logo').scrollIntoView({ 
-  behavior: 'smooth' 
-});
+
+// Home Button Event handlers
+const hmeButtnScrllup = $("#homeButton, .scrollUp");
+
+hmeButtnScrllup.click(function(){
+	scrollTop();
 });
 
-$("#aboutMeButton").on('click', function(event) {
+hmeButtnScrllup.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	scrollTop();
+	}
+});
 
+function scrollTop(){
+	document.querySelector('#logo').scrollIntoView({ 
+  	behavior: 'smooth' 
+	});
+}
+
+
+// About Button Event handlers
+const abtMeBtn = $("#aboutMeButton");
+
+abtMeBtn.click(function() {
+	scrollAbout();
+});
+
+abtMeBtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	scrollAbout();
+	}
+});
+
+function scrollAbout(){
+	
 		if(isChrome || isFirefox){
 			window.scroll({
 		  	top: 794,
@@ -53,18 +82,28 @@ $("#aboutMeButton").on('click', function(event) {
 		  	behavior: 'smooth' 
 			});
 		}
+}
 
+
+// Portfolio Button Event handlers
+const prtflioBtn = $("#portfolioButton");
+
+prtflioBtn.click(function() {
+	scrollPortfolio();
 });
 
+prtflioBtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	scrollPortfolio();
+	}
+});
 
-
-$("#portfolioButton").on('click', function(event) {
-
+function scrollPortfolio(){
 		if(isChrome || isFirefox){
-			window.scroll({
-		  	top: 1359,
-		  	behavior: "smooth"
-			});
+		window.scroll({
+	  	top: 1359,
+	  	behavior: "smooth"
+		});
 		}
 
 		else {
@@ -72,11 +111,23 @@ $("#portfolioButton").on('click', function(event) {
 		  behavior: 'smooth' 
 		});
 		}
+}
 
+
+// Contact Button Event handlers
+const cntctBtn = $("#contactButton");
+
+cntctBtn.click(function() {
+	scrollContact();
 });
 
-$("#contactButton").on('click', function(event) {
+cntctBtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	scrollContact();
+	}
+});
 
+function scrollContact(){
 		if(isChrome || isFirefox){
 			window.scroll({
 		  	top: 1743,
@@ -89,39 +140,134 @@ $("#contactButton").on('click', function(event) {
 		  	behavior: 'smooth' 
 			});
 		}
+}
 
+
+
+
+/* ----------Featured Works Event handlers--------------*/
+const onebtn = $('.one');
+const twobtn = $('.two');
+const threebtn = $('.three')
+const fourbtn = $('.four');
+const facebookbtn = $(".facebook");
+const linkedinbtn = $(".linkedin");
+const googlebtn = $(".google");
+
+
+// Behance Event handlers
+onebtn.click(function(){
+  one();
 });
 
-$('.one').click(function(){
-  window.open('https://www.behance.net/vasudevapitta');
-
+onebtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	one();
+	}
 });
 
-$('.two').click(function(){
-  window.open('https://vasudevapitta.github.io/Memory-Game/');
+function one(){
+	window.open('https://www.behance.net/vasudevapitta','_blank');
+}
+
+
+// Memory Game Event handlers
+twobtn.click(function(){
+  two();
 });
 
-$('.three').click(function(){
-  window.open('https://vasudevapitta.github.io/Pixel-Art-Maker/');
+twobtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	two();
+	}
 });
 
-$('.four').click(function(){
-  window.open('https://vasudevapitta.github.io/Shopping-List-App/');
+function two(){
+	window.open('https://vasudevapitta.github.io/Memory-Game/');
+}
+
+
+// Doodle Board Event handlers
+threebtn.click(function(){
+  three();
 });
 
-//link to open my Facebook Page
-$(".facebook").click(function(){
-window.open ("https://www.facebook.com/pvrpavankumar","_blank");
+threebtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	three();
+	}
 });
 
-//link to open Linkedin URL
-$(".linkedin").click(function(){
-window.open ("https://www.linkedin.com/in/vasudevapitta","_blank");
+function three(){
+	window.open('https://vasudevapitta.github.io/Pixel-Art-Maker/');
+}
+
+
+// To Do List App Event handlers
+fourbtn.click(function(){
+  four();
 });
 
-//link to open Google Plus URL
-$(".google").click(function(){
-window.open ("https://plus.google.com/u/0/+VasudevaPitta","_blank");
+fourbtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	four();
+	}
 });
+
+function four(){
+  window.open('https://vasudevapitta.github.io/Shopping-List-App/','_blank');
+}
+
+
+
+/* ----------Social media icons Event handlers--------------*/
+
+// facebook Event handlers
+facebookbtn.click(function(){
+  facebook();
+});
+
+facebookbtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	facebook();
+	}
+});
+
+function facebook(){
+	window.open ('https://www.facebook.com/pvrpavankumar','_blank');
+}
+
+
+// linkedin Event handlers
+linkedinbtn.click(function(){
+  linkedin();
+});
+
+linkedinbtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	linkedin();
+	}
+});
+
+function linkedin(){
+	window.open ('https://www.linkedin.com/in/vasudevapitta','_blank');
+}
+
+
+
+// google Event handlers
+googlebtn.click(function(){
+  google();
+});
+
+googlebtn.keypress(function(ev) {
+	if(ev.keyCode===13 || 32){
+	google();
+	}
+});
+
+function google(){
+	window.open ("https://plus.google.com/u/0/+VasudevaPitta","_blank");
+}
 
 });
