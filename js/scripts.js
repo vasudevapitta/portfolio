@@ -94,6 +94,7 @@ prtflioBtn.click(function() {
 
 prtflioBtn.keypress(function(ev) {
 	if(ev.keyCode===13 || 32){
+	$('.one').focus();
 	scrollPortfolio();
 	}
 });
