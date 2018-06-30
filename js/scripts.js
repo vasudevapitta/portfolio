@@ -36,7 +36,7 @@ function myFunction() {
 
 
 // Home Button Event handlers
-const hmeButtnScrllup = $("#homeButton, .scrollUp");
+const hmeButtnScrllup = $("#homeButton");
 
 hmeButtnScrllup.click(function(){
 	scrollTop();

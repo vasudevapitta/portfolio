@@ -11,16 +11,7 @@ img, embed, object, video {
 /* For Desktop */
 @media screen and (min-width: 1100px) {
 
-	#logo {
-	  width: 10%;
-  	  padding: 5px 0;
-	}
-
-	#logo img {
-  	  margin-left: -10px;
-      margin-bottom: -10px;
-      width: 60%;
-	}
+	
 
   	figure {
 	  flex-shrink: 0.5;
@@ -43,29 +34,13 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: row;
 	  text-align: center;
-	  background-color: #51c1ff;
+	  background-color: #02b3e4;
 	}
 
-	.scrollUp {
-	  color: #6d6d6d;
-	  cursor: pointer;
-	  padding: 5px 0;
-	  font: normal 15px 'helvetica', "sans-serif";
-	}
 }
 
 /* For iPad - Landscape mode and iPad Pro - Portrait mode*/
 @media screen and (min-width: 1000px) and (max-width: 1100px){
-	#logo {
-	  width: 15%;
-  	  padding: 5px 0;
-	}
-
-	#logo img {
-  	  margin-left: -10px;
-      margin-bottom: -10px;
-      width: 60%;
-	}
 
   	figure {
 	  flex-shrink: 0.5;
@@ -87,33 +62,12 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: row;
 	  text-align: center;
-	  background-color: #51c1ff;
-	}
-
-	.scrollUp {
-	  color: #6d6d6d;
-	  cursor: pointer;
-	  display: flex;
-	  justify-content: flex-end;
-	  padding: 0 40px 10px 0;
-	  font: normal 15px 'helvetica', "sans-serif";
+	  background-color: #02b3e4;
 	}
 }
 
 /* For iPad */
 @media screen and (min-width: 700px) and (max-width: 1000px){
-
-	#logo {
-	  width: 20%;
-  	  padding: 5px 0;
-	}
-	
-	#logo img {
-  	  margin-left: -20px;
-      margin-bottom: -5px;
-      margin-top: 10px;
-      width: 60%;
-	}
 
   	figure {
 	  flex-shrink: 0.5;
@@ -136,7 +90,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: row;
 	  text-align: center;
-	  background-color: #51c1ff;
+	  background-color: #02b3e4;
 	}
 
 	.scrollUp {
@@ -152,17 +106,6 @@ img, embed, object, video {
 /* For All Mobile - Landscape mode*/
 @media screen and (max-width: 745px){
 
-	#logo {
-	  width: 20%;
-  	  padding: 5px 0;
-	}
-
-	#logo img {
-  	  margin-bottom: -10px;
-  	  margin-top: 10px;
-  	  width: 60%;
-	}
-
 	header {
 	  width: 100%;
 	  margin: 0 auto;
@@ -171,7 +114,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: column;
 	  text-align: center;
-	  background-color: #51c1ff;
+	  background-color: #02b3e4;
 	}
 
 	figure {
@@ -186,31 +129,11 @@ img, embed, object, video {
 	  justify-content: center;
 	  flex-wrap: wrap;
 	}
-
-	.scrollUp {
-	  color: #6d6d6d;
-	  cursor: pointer;
-	  display: flex;
-	  justify-content: flex-end;
-	  padding: 0 40px 10px 0;
-	  font: normal 15px 'helvetica', "sans-serif";
-	}
 }
 
 /* For All Mobile - Portrait Mode*/
 @media screen and (max-width: 500px){
 	
-	#logo {
-	  width: 40%;
-  	  padding: 5px 0;
-	}
-
-	#logo img {
-  	  margin-bottom: -10px;
-  	  margin-top: 10px;
-  	  width: 50%;
-	}
-
 	header {
 	  width: 100%;
 	  margin: 0 auto;
@@ -219,7 +142,7 @@ img, embed, object, video {
 	  align-items: center;
 	  flex-direction: column;
 	  text-align: center;
-	  background-color: #51c1ff;
+	  background-color: #02b3e4;
 	}
 
 	figure {
@@ -234,30 +157,16 @@ img, embed, object, video {
 	  justify-content: center;
 	  flex-wrap: wrap;
 	}
-
-	.scrollUp {
-	  color: #6d6d6d;
-	  cursor: pointer;
-	  display: flex;
-	  justify-content: flex-end;
-	  padding: 0 10px 10px 0;
-	  font: normal 15px 'helvetica', "sans-serif";
-	}
 }
 
 body {
   width: 100%;
   margin: 0 auto;
   font: normal 20px/1.5 'helvetica', "sans-serif";
-  background-color: #e8e8e8;
 }
 
 p.my-name {
   font: normal 50px/0 'BeautyDemo','helvetica', "sans-serif";
-}
-
-.name-title h5{
-  color: #000;  
 }
 
 .hero-img img {
@@ -282,6 +191,14 @@ p.my-name {
   padding: 100px 0 40px 0;
 }
 
+.featured-works {
+  padding-top: 20px;
+}
+
+hr {
+  width: 95%;
+}
+
 #contactOuterInfo {
   padding: 5px 0 5px 0;
 }
@@ -299,16 +216,12 @@ figure img {
   transition: 0.3s ease;
 }
 
-.scrollUp:hover {
-  opacity: 0.5;
-  transition: 0.3s ease;
-}
-
 .innerInfo {
 	width: 90%;
 }
 
 .name-title {
+	color: #fff;
  	padding: 0 27px;
 }
 
@@ -330,9 +243,9 @@ figure img {
 .fa-linkedin,
 .fa-google-plus-square,
 .fa-github-square {	
-	color: #7d97ad;
-	font-size: 30px;
-	padding: 0 10px;
+	color: #02b3e4;
+	font-size: 50px;
+	padding: 0 20px;
 }
 
 .facebook,
@@ -346,7 +259,8 @@ figure img {
 .fa-linkedin:hover,
 .fa-google-plus-square:hover,
 .fa-github-square:hover {
-	color: #4a5c6b;
+	color: #148bb1;
+	transition: 0.3s ease;
 }
 
 footer {
@@ -354,7 +268,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	height: 40px;
-	background-color: #000;
+	background-color: #02b3e4;
 	align-items: center;
 	font: normal 12px 'helvetica', "sans-serif";
 }
@@ -362,22 +276,24 @@ footer {
 
 #navbar {
   overflow: hidden;
-  background-color: #000;
+  background-color: #02b3e4;
   font-size: 17px;
   z-index: 1;
 }
 
-.button{
+.button {
+  font-weight: bold;
   cursor: pointer;
   float: left;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   line-height: 0.5;
 }
 
 .button:hover {
-  color: #8e8e8e;
+  color: #000;
+  transition: 0.3s ease;
 }
 
 .sticky {
@@ -418,4 +334,9 @@ h1 {
 
 h6 {
 	color: #656565;
+}
+
+#logo {
+	width: 70px;
+	padding: 10px;
 }
