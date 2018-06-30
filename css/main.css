@@ -375,8 +375,7 @@ footer {
 }
 
 .button:hover {
-  background-color: #4c4c4c;
-  color: white;
+  color: #8e8e8e;
 }
 
 .sticky {
