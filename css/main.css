@@ -160,6 +160,7 @@ img, embed, object, video {
 }
 
 body {
+	color: #353535;
   width: 100%;
   margin: 0 auto;
   font: normal 20px/1.5 'helvetica', "sans-serif";
@@ -175,32 +176,15 @@ p.my-name {
   display: block;
 }
 
-.outerInfo,
 .featured-works {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-}
-
-.outerInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 100px 0 40px 0;
-}
-
-.featured-works {
   padding-top: 20px;
 }
 
 hr {
   width: 95%;
-}
-
-#contactOuterInfo {
-  padding: 5px 0 5px 0;
 }
 
 figure img {
@@ -214,10 +198,6 @@ figure img {
 .four:hover {
   opacity: 0.6;
   transition: 0.3s ease;
-}
-
-.innerInfo {
-	width: 90%;
 }
 
 .name-title {
@@ -251,14 +231,22 @@ figure img {
 .facebook,
 .linkedin,
 .google,
-.github {
+.github,
+.scrollup {
 	cursor: pointer;
+}
+
+.fa-arrow-circle-up {
+	color: #02b3e4;
+	font-size: 40px;
+	padding: 2px;
 }
 
 .fa-facebook-square:hover,
 .fa-linkedin:hover,
 .fa-google-plus-square:hover,
-.fa-github-square:hover {
+.fa-github-square:hover,
+.fa-arrow-circle-up:hover {
 	color: #148bb1;
 	transition: 0.3s ease;
 }
@@ -292,7 +280,7 @@ footer {
 }
 
 .button:hover {
-  color: #000;
+  color: #353535;
   transition: 0.3s ease;
 }
 
@@ -339,4 +327,23 @@ h6 {
 #logo {
 	width: 70px;
 	padding: 10px;
+}
+
+.aboutMe {
+	padding: 100px 0 20px 0;
+}
+
+#contactInfo,
+.aboutMe h1,
+.aboutMe p {
+	text-align: center;
+}
+
+#contactInfo {
+	padding-top: 20px;
+}
+
+.scrollup {
+	display: flex;
+	justify-content: flex-end;
 }
