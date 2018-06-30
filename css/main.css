@@ -328,7 +328,8 @@ figure img {
 
 .fa-facebook-square,
 .fa-linkedin,
-.fa-google-plus-square {	
+.fa-google-plus-square,
+.fa-github-square {	
 	color: #7d97ad;
 	font-size: 30px;
 	padding: 0 10px;
@@ -336,14 +337,15 @@ figure img {
 
 .facebook,
 .linkedin,
-.google {
+.google,
+.github {
 	cursor: pointer;
 }
 
 .fa-facebook-square:hover,
 .fa-linkedin:hover,
 .fa-google-plus-square:hover,
-.fa-envelope:hover {
+.fa-github-square:hover {
 	color: #4a5c6b;
 }
 
