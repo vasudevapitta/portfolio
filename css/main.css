@@ -286,19 +286,16 @@ p.my-name {
   padding: 5px 0 5px 0;
 }
 
-.works h3 {
-  cursor: pointer;
-}
-
 figure img {
   width: 100%;
   margin-bottom: 15px;
-  cursor: pointer;
 }
 
-figure img:hover {
-  opacity: 0.5;
-  background-color: #fff;
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+  opacity: 0.6;
   transition: 0.3s ease;
 }
 
