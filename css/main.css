@@ -26,7 +26,7 @@ img, embed, object, video {
 	}
 
 	header {
-	  height: 135px;
+	  height: 75px;
 	  width: 100%;
 	  margin: 0 auto;
 	  display: flex;
@@ -35,6 +35,7 @@ img, embed, object, video {
 	  flex-direction: row;
 	  text-align: center;
 	  background-color: #02b3e4;
+	  padding-top: 40px;
 	}
 
 }
@@ -55,6 +56,7 @@ img, embed, object, video {
 	}
 
 	header {
+	  height: 75px;
 	  width: 100%;
 	  margin: 0 auto;
 	  display: flex;
@@ -63,11 +65,12 @@ img, embed, object, video {
 	  flex-direction: row;
 	  text-align: center;
 	  background-color: #02b3e4;
+	  padding-top: 40px;
 	}
 }
 
 /* For iPad */
-@media screen and (min-width: 700px) and (max-width: 1000px){
+@media screen and (min-width: 745px) and (max-width: 1000px){
 
   	figure {
 	  flex-shrink: 0.5;
@@ -83,6 +86,8 @@ img, embed, object, video {
 	}
 
 	header {
+	  height: 75px;
+	  padding-top: 40px;
 	  width: 100%;
 	  margin: 0 auto;
 	  display: flex;
@@ -166,7 +171,7 @@ body {
   font: normal 20px/1.5 'helvetica', "sans-serif";
 }
 
-p.my-name {
+h1.my-name {
   font: normal 50px/0 'BeautyDemo','helvetica', "sans-serif";
 }
 
@@ -294,10 +299,6 @@ footer {
   padding-top: 60px;
 }
 
-h1 {
-	font-size: 30px;
-}
-
 .imgDiv {
 	display: flex;
 	justify-content: center;
@@ -334,7 +335,7 @@ h6 {
 }
 
 #contactInfo,
-.aboutMe h1,
+.aboutMe h2,
 .aboutMe p {
 	text-align: center;
 }
