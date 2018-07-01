@@ -73,13 +73,13 @@ function scrollAbout(){
 	
 		if(isChrome || isFirefox){
 			window.scroll({
-		  	top: 794,
+		  	top: 770,
 		  	behavior: "smooth"
 			});
 		}
 
 		else{
-			window.scroll(0,794);
+			window.scroll(0,770);
 		}
 }
 
@@ -101,13 +101,13 @@ prtflioBtn.keypress(function(ev) {
 function scrollPortfolio(){
 		if(isChrome || isFirefox){
 		window.scroll({
-	  	top: 1359,
+	  	top: 1425,
 	  	behavior: "smooth"
 		});
 		}
 
 		else {
-		window.scroll(0,1250);
+		window.scroll(0,1425);
 		}
 }
 
@@ -128,7 +128,7 @@ cntctBtn.keypress(function(ev) {
 function scrollContact(){
 		if(isChrome || isFirefox){
 			window.scroll({
-		  	top: 1743,
+		  	top: 1856,
 		  	behavior: "smooth"
 			});
 		}
