@@ -160,7 +160,7 @@ img, embed, object, video {
 }
 
 body {
-	color: #353535;
+  color: #000;
   width: 100%;
   margin: 0 auto;
   font: normal 20px/1.5 'helvetica', "sans-serif";
@@ -201,7 +201,7 @@ figure img {
 }
 
 .name-title {
-	color: #fff;
+	color:#000;
  	padding: 0 27px;
 }
 
@@ -252,7 +252,7 @@ figure img {
 }
 
 footer {
-	color: #fff;
+	color: #000;
 	display: flex;
 	justify-content: center;
 	height: 40px;
@@ -273,14 +273,14 @@ footer {
   font-weight: bold;
   cursor: pointer;
   float: left;
-  color: #fff;
+  color:#000;
   text-align: center;
   padding: 14px 14px;
   line-height: 0.5;
 }
 
 .button:hover {
-  color: #353535;
+  color: #fff;
   transition: 0.3s ease;
 }
 
