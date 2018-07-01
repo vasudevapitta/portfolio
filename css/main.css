@@ -315,10 +315,7 @@ footer {
 	border-radius: 200px 200px 200px 200px;
 	-moz-border-radius: 200px 200px 200px 200px;
 	-webkit-border-radius: 200px 200px 200px 200px;
-	border: 4px solid #fff;
-	-webkit-box-shadow: -1px 4px 9px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 4px 9px 0px rgba(0,0,0,0.75);
-	box-shadow: -1px 4px 9px 0px rgba(0,0,0,0.75);
+	border: 4px solid #02b3e4;
 }
 
 h6 {
