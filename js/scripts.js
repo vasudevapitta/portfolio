@@ -42,7 +42,7 @@ function myFunction() {
 
 
 // Home Button Event handlers
-const hmeButtnScrllup = $("#homeButton, .scrollup");
+var hmeButtnScrllup = $("#homeButton, .scrollup");
 
 hmeButtnScrllup.click(function(){
 	scrollTop();
@@ -63,7 +63,7 @@ window.scroll({
 
 
 // About Button Event handlers
-const abtMeBtn = $("#aboutMeButton");
+var abtMeBtn = $("#aboutMeButton");
 
 abtMeBtn.click(function() {
 	scrollAbout();
@@ -119,7 +119,7 @@ function scrollPortfolio(){
 
 
 // Contact Button Event handlers
-const cntctBtn = $("#contactButton");
+var cntctBtn = $("#contactButton");
 
 cntctBtn.click(function() {
 	scrollContact();

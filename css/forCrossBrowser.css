@@ -11,9 +11,7 @@ img, embed, object, video {
 /* For Desktop */
 @media screen and (min-width: 1100px) {
 
-	
-
-  	figure {
+	  figure {
 	  -ms-flex-negative: 0.5;
 	      flex-shrink: 0.5;
 	  width: 40%;
@@ -337,7 +335,7 @@ figure img {
 .fa-google-plus-square:hover,
 .fa-github-square:hover,
 .fa-arrow-circle-up:hover {
-	color: #148bb1;
+	color: #59d7f9;
 	-webkit-transition: 0.3s ease;
 	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
