@@ -1,4 +1,10 @@
+$(document).ready(function(){
+/*Arrow function Syntax
+
 $(()=>{
+
+*/
+
 // Opera 8.0+
 var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 
@@ -101,13 +107,13 @@ prtflioBtn.keypress(function(ev) {
 function scrollPortfolio(){
 		if(isChrome || isFirefox){
 		window.scroll({
-	  	top: 1425,
+	  	top: 1370,
 	  	behavior: "smooth"
 		});
 		}
 
 		else {
-		window.scroll(0,1425);
+		window.scroll(0,1370);
 		}
 }
 
