@@ -20,6 +20,6 @@ I added comments for myself and other people who read my code.
 I used jQuery with the latest ES6 syntax in JavaScript.
 
 
-Check out the [live version](https://vasudevapitta.github.io/New-Responsive-Portfolio/)
+Check out the [project live](https://vasudevapitta.github.io/New-Responsive-Portfolio/)
 
 Thanks! :)
