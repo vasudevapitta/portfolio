@@ -249,6 +249,7 @@ figure img {
 .fa-arrow-circle-up:hover {
 	color: #59d7f9;
 	transition: 0.3s ease;
+	font-size: 40px;
 }
 
 footer {
@@ -279,9 +280,11 @@ footer {
   line-height: 0.5;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: #fff;
   transition: 0.3s ease;
+  text-decoration: underline;
 }
 
 .sticky {
