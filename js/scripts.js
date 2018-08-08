@@ -79,7 +79,7 @@ function scrollAbout(){
 	
 		if(isChrome || isFirefox){
 			window.scroll({
-		  	top: 770,
+		  	top: 867,
 		  	behavior: "smooth"
 			});
 		}
@@ -107,13 +107,13 @@ prtflioBtn.keypress(function(ev) {
 function scrollPortfolio(){
 		if(isChrome || isFirefox){
 		window.scroll({
-	  	top: 1370,
+	  	top: 1509,
 	  	behavior: "smooth"
 		});
 		}
 
 		else {
-		window.scroll(0,1370);
+		window.scroll(0,1509);
 		}
 }
 
@@ -134,7 +134,7 @@ cntctBtn.keypress(function(ev) {
 function scrollContact(){
 		if(isChrome || isFirefox){
 			window.scroll({
-		  	top: 1856,
+		  	top: 1956,
 		  	behavior: "smooth"
 			});
 		}
