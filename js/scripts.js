@@ -134,7 +134,7 @@ cntctBtn.keypress(function(ev) {
 function scrollContact(){
 		if(isChrome || isFirefox){
 			window.scroll({
-		  	top: 1956,
+		  	top: 2477,
 		  	behavior: "smooth"
 			});
 		}
