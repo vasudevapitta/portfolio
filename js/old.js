@@ -76,9 +76,17 @@ abtMeBtn.keypress(function(ev) {
 });
 
 function scrollAbout(){
-		document.querySelector('#aboutScroll').scrollIntoView({ 
-		  behavior: 'smooth' 
-		});
+	
+		if(isChrome || isFirefox){
+			window.scroll({
+		  	top: 867,
+		  	behavior: "smooth"
+			});
+		}
+
+		else{
+			window.scroll(0,770);
+		}
 }
 
 
@@ -97,10 +105,18 @@ prtflioBtn.keypress(function(ev) {
 });
 
 function scrollPortfolio(){
-		document.querySelector('#portfolioScroll').scrollIntoView({ 
-		  behavior: 'smooth'
+		if(isChrome || isFirefox){
+		window.scroll({
+	  	top: 1509,
+	  	behavior: "smooth"
 		});
+		}
+
+		else {
+		window.scroll(0,1509);
+		}
 }
+
 
 // Contact Button Event handlers
 var cntctBtn = $("#contactButton");
@@ -116,9 +132,18 @@ cntctBtn.keypress(function(ev) {
 });
 
 function scrollContact(){
+		if(isChrome || isFirefox){
+			window.scroll({
+		  	top: 2477,
+		  	behavior: "smooth"
+			});
+		}
+
+		else {
 			document.querySelector('#contactInfo').scrollIntoView({ 
 		  	behavior: 'smooth' 
 			});
+		}
 }
 
 });
