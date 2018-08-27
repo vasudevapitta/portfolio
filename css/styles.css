@@ -246,11 +246,15 @@ figure img {
 .fa-facebook-square:hover,
 .fa-linkedin:hover,
 .fa-google-plus-square:hover,
-.fa-github-square:hover,
-.fa-arrow-circle-up:hover {
+.fa-github-square:hover {
 	color: #59d7f9;
 	transition: 0.3s ease;
 	font-size: 47px;
+}
+
+.fa-arrow-circle-up:hover {
+	color: #59d7f9;
+	transition: 0.3s ease;
 }
 
 footer {
