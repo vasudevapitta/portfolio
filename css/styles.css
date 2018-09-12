@@ -1,3 +1,28 @@
+/*===========STYLES FOR LAZY LOADING==========*/
+.fade-in {
+	animation-name: fadeIn;
+	animation-duration: 1.3s;
+	animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.js-lazy-image {
+	display: block;
+	height: 100%; /* needed because otherwise all images are "rendered" in viewport on page load */
+
+}
+/*=========END OF STYLES FOR LAZY LOADING==========*/
+
+
 img, embed, object, video {
 	max-width: 100%;
 }
