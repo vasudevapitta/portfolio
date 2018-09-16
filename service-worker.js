@@ -7,11 +7,10 @@ const allCacheURLs = [
 'index.html',
 'js/scripts.js',
 'js/mainForSw.js',
-'styles.css',
-'all.css',
+'css/styles.css',
 'images/logo1.svg',
 'images/hero-img-1504w.jpg',
-'images/hero-img-768w.jpg',
+'images/ipad-hero-img-768w.jpg',
 'images/mobile-hero-img-375w.jpg',
 'images/mypic.png',
 'images/restaurantReview.jpg',
@@ -24,8 +23,8 @@ const allCacheURLs = [
 'images/pixelart.jpg',
 'images/shoppinglistapp.jpg',
 'fonts/BeautyDemo.ttf',
-'fa-brands-400.woff2',
-'fa-solid-900.woff2'
+'https://use.fontawesome.com/releases/v5.0.12/css/all.css',
+'https://code.jquery.com/jquery-3.3.1.js'
 ];
 
 
