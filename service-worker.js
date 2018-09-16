@@ -4,7 +4,29 @@ const staticCacheName = 'v1';
 //if you are running a local host - change all paths accordingly
 
 const allCacheURLs = [
-'index.html'
+'index.html',
+'https://code.jquery.com/jquery-3.3.1.js',
+'js/scripts.js',
+'js/mainForSw.js',
+'styles.css',
+'all.css',
+'images/logo1.svg',
+'images/hero-img-1504w.jpg',
+'images/hero-img-768w.jpg',
+'images/mobile-hero-img-375w.jpg',
+'images/mypic.png',
+'images/restaurantReview.jpg',
+'images/calculator.jpg',
+'images/catclicker.jpg',
+'images/gamehub.jpg',
+'images/pixabayAPI.jpg',
+'images/digiegg.jpg',
+'images/memorygame.jpg',
+'images/pixelart.jpg',
+'images/shoppinglistapp.jpg',
+'fonts/BeautyDemo.ttf',
+'fa-brands-400.woff2',
+'fa-solid-900.woff2'
 ];
 
 
