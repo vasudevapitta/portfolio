@@ -4,7 +4,7 @@ const staticCacheName = 'v1';
 //if you are running a local host - change all paths accordingly
 
 const allCacheURLs = [
-'/index.html'
+'index.html'
 ];
 
 
