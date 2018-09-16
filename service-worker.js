@@ -8,6 +8,7 @@ const allCacheURLs = [
 'js/scripts.js',
 'js/mainForSw.js',
 'css/styles.css',
+'css/fontAwesome.css',
 'images/logo1.svg',
 'images/hero-img-1504w.jpg',
 'images/ipad-hero-img-768w.jpg',
@@ -23,7 +24,6 @@ const allCacheURLs = [
 'images/pixelart.jpg',
 'images/shoppinglistapp.jpg',
 'fonts/BeautyDemo.ttf',
-'https://use.fontawesome.com/releases/v5.0.12/css/all.css',
 'https://code.jquery.com/jquery-3.3.1.js'
 ];
 
