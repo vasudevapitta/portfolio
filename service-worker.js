@@ -5,7 +5,6 @@ const staticCacheName = 'v1';
 
 const allCacheURLs = [
 'index.html',
-'https://code.jquery.com/jquery-3.3.1.js',
 'js/scripts.js',
 'js/mainForSw.js',
 'styles.css',
