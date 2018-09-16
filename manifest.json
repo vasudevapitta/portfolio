@@ -1,0 +1,15 @@
+{
+  "name": "Vasudeva Pitta | Portfolio",
+  "short_name": "Pitta",
+  "theme_color": "#02b3e4",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [{
+    "src": "images/logo512X512.jpg",
+    "sizes": "512x512",
+    "type": "image/jpg"
+  }],
+  "splash_pages": null
+}
