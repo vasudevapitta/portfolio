@@ -1,11 +1,11 @@
 {
-  "name": "Vasudeva Pitta | Portfolio",
-  "short_name": "Pitta",
+  "name": "Portfolio | Vasudeva Pitta",
+  "short_name": "Portfolio",
   "theme_color": "#02b3e4",
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "standalone",
   "Scope": "/",
-  "start_url": "/",
+  "start_url": "https://vasudevapitta.github.io/New-Responsive-Portfolio/",
   "icons": [{
     "src": "images/logo512X512.jpg",
     "sizes": "512x512",
