@@ -3,7 +3,7 @@
   "short_name": "Pitta",
   "theme_color": "#02b3e4",
   "background_color": "#ffffff",
-  "display": "browser",
+  "display": "fullscreen",
   "Scope": "/",
   "start_url": "/",
   "icons": [{
