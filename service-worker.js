@@ -8,7 +8,6 @@ const allCacheURLs = [
 'js/scripts.js',
 'js/mainForSw.js',
 'css/styles.css',
-'css/fontAwesome.css',
 'images/logo1.svg',
 'images/hero-img-1504w.jpg',
 'images/ipad-hero-img-768w.jpg',
