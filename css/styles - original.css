@@ -23,7 +23,10 @@
 /*=========END OF STYLES FOR LAZY LOADING==========*/
 
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
 	max-width: 100%;
 }
 
@@ -32,161 +35,6 @@ img, embed, object, video {
     font-family: "BeautyDemo";
     src: url("../fonts/BeautyDemo.ttf") format("truetype");
     }
-
-/* For Desktop */
-@media screen and (min-width: 1100px) {
-
-	  figure {
-	  flex-shrink: 0.5;
-	  width: 40%;
-	}
-
-	.works {
-	  margin-top: -30px;
-	  display: flex;
-	  justify-content: center;
-	  flex-wrap: nowrap;
-	}
-
-	header {
-	  height: 75px;
-	  width: 100%;
-	  margin: 0 auto;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  flex-direction: row;
-	  text-align: center;
-	  background-color: #02b3e4;
-	  padding-top: 40px;
-	}
-
-}
-
-/* For iPad - Landscape mode and iPad Pro - Portrait mode*/
-@media screen and (min-width: 1000px) and (max-width: 1100px){
-
-  	figure {
-	  flex-shrink: 0.5;
-	  width: 40%;
-	}
-
-	.works {
-	  margin-top: -30px;
-	  display: flex;
-	  justify-content: center;
-	  flex-wrap: nowrap;
-	}
-
-	header {
-	  height: 75px;
-	  width: 100%;
-	  margin: 0 auto;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  flex-direction: row;
-	  text-align: center;
-	  background-color: #02b3e4;
-	  padding-top: 40px;
-	}
-
-}
-
-/* For iPad */
-@media screen and (min-width: 745px) and (max-width: 1000px){
-
-  	figure {
-	  flex-shrink: 0.5;
-	  width: 39%;
-	  border-radius: 10px;
-	}
-
-	.works {
-	  margin-top: -30px;
-	  display: flex;
-	  justify-content: center;
-	  flex-wrap: wrap;
-	}
-
-	header {
-	  height: 75px;
-	  padding-top: 40px;
-	  width: 100%;
-	  margin: 0 auto;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  flex-direction: row;
-	  text-align: center;
-	  background-color: #02b3e4;
-	}
-
-	.scrollUp {
-	  color: #6d6d6d;
-	  cursor: pointer;
-	  display: flex;
-	  justify-content: flex-end;
-	  padding: 0 40px 10px 0;
-	  font: normal 15px 'helvetica', "sans-serif";
-	}
-}
-
-/* For All Mobile - Landscape mode*/
-@media screen and (max-width: 745px){
-
-	header {
-	  width: 100%;
-	  margin: 0 auto;
-	  display: flex;
-	  justify-content: space-around;
-	  align-items: center;
-	  flex-direction: column;
-	  text-align: center;
-	  background-color: #02b3e4;
-	}
-
-	figure {
-	  flex-shrink: 0.5;
-	  width: 80%;
-	  padding: 5px;
-	}
-
-	.works {
-	  margin-top: -30px;
-	  display: flex;
-	  justify-content: center;
-	  flex-wrap: wrap;
-	}
-}
-
-/* For All Mobile - Portrait Mode*/
-@media screen and (max-width: 500px){
-	
-	header {
-	  width: 100%;
-	  margin: 0 auto;
-	  display: flex;
-	  justify-content: space-around;
-	  align-items: center;
-	  flex-direction: column;
-	  text-align: center;
-	  background-color: #02b3e4;
-	}
-
-	figure {
-	  flex-shrink: 0;
-	  width: 100%;
-	  padding: 0;
-	}
-
-	.works {
-	  margin-top: -30px;
-	  display: flex;
-	  justify-content: center;
-	  flex-wrap: wrap;
-	}
-}
 
 body {
   color: #000;
@@ -212,10 +60,6 @@ h1.my-name {
   padding-top: 20px;
 }
 
-hr {
-  width: 95%;
-}
-
 figure img {
   width: 100%;
   margin-bottom: 15px;
@@ -230,12 +74,6 @@ figure img {
 	color:#000;
  	padding: 0 27px;
 }
-
-/*
-.featured-works h1 {
-	text-decoration: underline;
-}
-*/
 
 .social-media {
 	display: flex;
@@ -292,18 +130,18 @@ footer {
 	font: normal 12px 'helvetica', "sans-serif";
 }
 
-
 #navbar {
   overflow: hidden;
   background-color: #02b3e4;
   font-size: 17px;
   z-index: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .button {
   font-weight: bold;
   cursor: pointer;
-  float: left;
   color:#000;
   text-align: center;
   padding: 14px 14px;
@@ -405,6 +243,95 @@ figcaption {
 	width: 50%;
 }
 
-hr {
-	display: none;
+header {
+  height: 75px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  background-color: #02b3e4;
+  padding-top: 40px;
+}
+
+figure {
+	flex-shrink: 0.5;
+	width: 40%;
+}
+
+.works {
+	margin-top: -30px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+/* For iPad - Landscape mode and iPad Pro - Portrait mode*/
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+
+  	figure {
+	  flex-shrink: 0.5;
+	  width: 40%;
+	}
+
+}
+
+/* For iPad */
+@media screen and (min-width: 745px) and (max-width: 1000px){
+
+  	figure {
+	  flex-shrink: 0.5;
+	  width: 39%;
+	  border-radius: 10px;
+	}
+
+	.works {
+	  flex-wrap: wrap;
+	}
+
+	.scrollUp {
+	  color: #6d6d6d;
+	  cursor: pointer;
+	  display: flex;
+	  justify-content: flex-end;
+	  padding: 0 40px 10px 0;
+	  font: normal 15px 'helvetica', "sans-serif";
+	}
+}
+
+/* For All Mobile - Landscape mode*/
+@media screen and (max-width: 745px){
+
+	header {
+	  justify-content: space-around;
+	  flex-direction: column;
+	  height: 200px;
+	}
+
+	figure {
+	  flex-shrink: 0.5;
+	  width: 80%;
+	  padding: 5px;
+	}
+
+	.works {
+	  flex-wrap: wrap;
+	}
+
+	#navbar {
+	  justify-content: center;
+	}
+}
+
+/* For All Mobile - Portrait Mode*/
+@media screen and (max-width: 500px){
+	
+figure {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0;
+}
+
 }
