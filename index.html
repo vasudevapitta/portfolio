@@ -21,15 +21,15 @@
 </head>
 
 <body>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function initMap() {
         var myLatLng = {lat: 40.26008289183893, lng: -76.86739651509663};
-
+    
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
           center: myLatLng
         });
-
+    
         var panorama = new google.maps.StreetViewPanorama(
             document.getElementById('pano'), {
               position: myLatLng,
@@ -40,20 +40,20 @@
               }
         });
         map.setStreetView(panorama);
-
-
+    
+    
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Click to view address'
         });
-
+    
         var contentString = `<div><h3>Vasudeva Pitta</h3><h5>408 S.13 St, Harrisburg PA 17104. 732-789-0005</h5></div>`
-
+    
         var infowindow = new google.maps.InfoWindow({
           content: contentString
         });
-
+    
         marker.addListener('click', (function(marker, i) {
         return function() {
             if (marker.getAnimation() != null) {
@@ -66,7 +66,7 @@
         }
         })(marker));
     }
-    </script>
+    </script> -->
     <header>
         <div id="logo">
             <a href="https://vasudevapitta.github.io/New-Responsive-Portfolio/"><img src="images/logo1.svg" alt="logo"></a>
@@ -271,8 +271,16 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
             <article id="contactInfo">
                 <div id="mapContainer">
                     <div id="mapSizer">
-                    <div id="pano"></div>
-                    <div id="map"></div>
+                    <div id="pano">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1537581345928!6m8!1m7!1sC1bQnhj3FbDb0noIw3ylmA!2m2!1d40.26008289183893!2d-76.86739651509663!3f239.63!4f0!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    </div>
+                    <div id="map">
+                        
+                        <div style="width: 100%; height: 100%"><iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=408%20South%2013%20Street+(My%Apartment%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe></div><br/>
+
+                    </div>
                     </div>
                 </div>
                 <h2>Contact Information</h2>
