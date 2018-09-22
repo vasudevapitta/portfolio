@@ -337,9 +337,9 @@ footer {
 
 .mypic {
 	position: relative;
-	-webkit-transform: translateY(-50px);
-	-ms-transform: translateY(-50px);
-	 transform: translateY(-50px);
+	-webkit-transform: translateY(-90px);
+	-ms-transform: translateY(-90px);
+	 transform: translateY(-90px);
 	background-image: url("../images/mypic.png");
 	background-size: cover;
 	width: 200px;
@@ -361,6 +361,7 @@ h6 {
 
 .aboutMe {
 	padding: 0 7px 20px 7px;
+	margin-top: -30px;
 }
 
 #contactInfo,
@@ -388,6 +389,7 @@ figcaption {
 	justify-content: center;
 	height: 200px;
 	width: 100%;
+	margin-bottom: 60px;
 }
 
 #mapSizer {
