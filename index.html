@@ -21,6 +21,52 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        function initMap() {
+        var myLatLng = {lat: 40.26008289183893, lng: -76.86739651509663};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: myLatLng
+        });
+
+        var panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('pano'), {
+              position: myLatLng,
+              pov: {
+                heading: -128,
+                pitch: 5,
+                zoom: 0
+              }
+        });
+        map.setStreetView(panorama);
+
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Click to view address'
+        });
+
+        var contentString = `<div><h3>Vasudeva Pitta</h3><h5>408 S.13 St, Harrisburg PA 17104. 732-789-0005</h5></div>`
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        marker.addListener('click', (function(marker, i) {
+        return function() {
+            if (marker.getAnimation() != null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+                setTimeout(function(){ marker.setAnimation(null); }, 1000);
+            }
+            infowindow.open(map, marker);
+        }
+        })(marker));
+    }
+    </script>
     <header>
         <div id="logo">
             <a href="https://vasudevapitta.github.io/New-Responsive-Portfolio/"><img src="images/logo1.svg" alt="logo"></a>
@@ -223,6 +269,12 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
             <hr>
 
             <article id="contactInfo">
+                <div id="mapContainer">
+                    <div id="mapSizer">
+                    <div id="pano"></div>
+                    <div id="map"></div>
+                    </div>
+                </div>
                 <h2>Contact Information</h2>
                 <p>E-mail: tizzicboy@gmail.com
                     <br>Cell: 732 789 0005</p>
@@ -251,6 +303,7 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
     <footer id="footer">Copyright © 2018 Vasudeva Pitta. All rights reserved.</footer>
     <script type="application/javascript" charset="utf-8" src="js/mainForSw.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdTL2BZEXnt61oPQ4Oq2cg0eKFto009LQ&callback=initMap" async defer></script>
 </body>
 
 </html>

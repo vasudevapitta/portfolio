@@ -382,3 +382,13 @@ figcaption {
 	padding: 10px;
 	text-align: left;
 }
+
+#map {
+	height: 200px;
+	width: 80%;
+}
+
+#mapWrapper {
+	display: flex;
+	justify-content: center;
+}
