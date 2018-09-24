@@ -81,6 +81,7 @@ figure img {
 	align-items: center;
 	width: 100%;
 	height: 40px;
+	margin-bottom: 100px;
 }
 
 .fa-facebook-square,
@@ -266,6 +267,18 @@ figure {
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
+}
+
+.worksDiv {
+	margin-bottom: 150px;
+}
+
+hr {
+	width: 95%;
+}
+
+#footer {
+	padding: 25px;
 }
 
 /* For iPad - Landscape mode and iPad Pro - Portrait mode*/
