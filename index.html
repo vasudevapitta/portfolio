@@ -24,12 +24,12 @@
     <!-- <script type="text/javascript">
         function initMap() {
         var myLatLng = {lat: 40.26008289183893, lng: -76.86739651509663};
-    
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
           center: myLatLng
         });
-    
+
         var panorama = new google.maps.StreetViewPanorama(
             document.getElementById('pano'), {
               position: myLatLng,
@@ -40,20 +40,19 @@
               }
         });
         map.setStreetView(panorama);
-    
-    
+
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Click to view address'
         });
-    
+
         var contentString = `<div><h3>Vasudeva Pitta</h3><h5>408 S.13 St, Harrisburg PA 17104. 732-789-0005</h5></div>`
-    
+
         var infowindow = new google.maps.InfoWindow({
           content: contentString
         });
-    
+
         marker.addListener('click', (function(marker, i) {
         return function() {
             if (marker.getAnimation() != null) {
@@ -98,9 +97,9 @@
             <div class="aboutMe">
 
                 <h2 id="aboutScroll">Hello!</h2>
-                <p>My name is Vasu. I have a degree in Web and Interactive Media. I started my career as a Web designer & developer. My career took a major turn when I won the Google Developer Challenge Scholarship to get a Nano-degree in Front End Web Development from Google Udacity.<br><br>
-
-I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6, jQuery, handling RESTful APIs with AJAX XHR/Fetch/jQuery, build tools and task runners- Node js NPM, Gulp for automation and optimization. Writing test suites for projects using Jasmine testing framework. Code Linting for syntax and styling errors using ESLint. Expressive live editing using Browser-sync. Scaffolding tools - Yeoman and HTML5 BoilerPlate. Git version control system. Creating offline first applications using Service worker API. JS frameworks - React. Sublime is my favorite text editor as I like the flexible package control and the awesome Emmet plugin which makes writing code faster and efficient. Check out some of my works below. Thanks!</p>
+                <p>My name is Vasu. I have a degree in Web and Interactive Media. I started my career as a Web designer & developer. My career took a major turn when I won the Google Developer Challenge Scholarship to get a Nano-degree in Front End Web Development from Google Udacity.
+                    <br>
+                    <br> I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6, jQuery, handling RESTful APIs with AJAX XHR/Fetch/jQuery, build tools and task runners- Node js NPM, Gulp for automation and optimization. Writing test suites for projects using Jasmine testing framework. Code Linting for syntax and styling errors using ESLint. Expressive live editing using Browser-sync. Scaffolding tools - Yeoman and HTML5 BoilerPlate. Git version control system. Creating offline first applications using Service worker API. JS frameworks - React. Sublime is my favorite text editor as I like the flexible package control and the awesome Emmet plugin which makes writing code faster and efficient. Check out some of my works below. Thanks!</p>
 
             </div>
         </section>
@@ -109,7 +108,7 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
             <div class="featured-works">
                 <h2>Featured works</h2>
 
-                    <div class="works">
+                <div class="works">
                     <figure>
                         <div class="one" title="Click to visit">
                             <a href="https://vasudevapitta.github.io/restaurant-reviews-app/" target="_blank" rel="noopener">
@@ -121,7 +120,6 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                             A web app which uses the offline first approach using the Service Worker API.
                         </figcaption>
                     </figure>
-                    
 
                     <figure>
                         <div class="one" title="Click to visit">
@@ -134,10 +132,9 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                             I coded this calculator using JavaScript MVC pattern. Check out the code <a href="https://github.com/vasudevapitta/calculator-js" target="_blank" rel="noopener">here!</a>
                         </figcaption>
                     </figure>
-                    
 
                     <figure>
-                       <div class="one" title="Click to visit Cat Clicker">
+                        <div class="one" title="Click to visit Cat Clicker">
                             <a href="https://vasudevapitta.github.io/cat-clicker/" target="_blank" rel="noopener">
                                 <h3>Cat Clicker</h3>
                                 <img class="js-lazy-image" data-src="images/catclicker.jpg" alt="Catclicker MVC project thumbnail">
@@ -148,10 +145,8 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                         </figcaption>
                     </figure>
 
-
-                   </div>
-                    <!--end of div class="works"-->
-
+                </div>
+                <!--end of div class="works"-->
 
                 <div class="works">
                     <figure>
@@ -210,10 +205,10 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                     <figure>
 
                         <div class="one" title="Click to visit Behance Portfolio"> -->
-                            <!--a tags have focus by default as they are a native html element. rel="noopener" is an attribute which will prevent the newly opened window to have access to your website using window.opener.location -->
-                       <!--     <a href="https://www.behance.net/vasudevapitta" target="_blank" rel="noopener">
+                    <!--a tags have focus by default as they are a native html element. rel="noopener" is an attribute which will prevent the newly opened window to have access to your website using window.opener.location -->
+                    <!--     <a href="https://www.behance.net/vasudevapitta" target="_blank" rel="noopener">
                                 <h3>Behance</h3> -->
-                                <!-- Thumbnail images are decorative - Hence no value in alt attribute -->
+                    <!-- Thumbnail images are decorative - Hence no value in alt attribute -->
                     <!--   <img src="images/behance.jpg" alt="">
                             </a>
                         </div>
@@ -261,8 +256,6 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                     </figure>
                 </div>
 
-
-
                 <div class="works">
                     <figure>
                         <div class="one" title="Click to visit My Reads React App">
@@ -271,10 +264,9 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                                 <img src="images/myreads.jpg" alt="My reads react app">
                             </a>
                         </div>
-                    
+
                         <figcaption>
-                            A web app developed using React JS & React Router that allows users to search,
-                            select & categorize books based on if they've read, currently reading or want to read.
+                            A web app developed using React JS & React Router that allows users to search, select & categorize books based on if they've read, currently reading or want to read.
                         </figcaption>
                     </figure>
 
@@ -289,71 +281,73 @@ I am proficient in HTML5, CSS3, JavaScript with object oriented programming, ES6
                             A project implementing Google maps API with React & a third party API FourSquare to dynamically generate & display a list of locations & details in a certain area.
                         </figcaption>
                     </figure>
-    
+
                     <figure>
                         <div class="one" title="Click to visit Great Jobs Today">
-                        <a href="http://greatjobstoday.net/cgi-bin/index.cgi" target="_blank" rel="noopener">
-                        <h3>GreatJobsToday Site</h3>
-                        <img class="js-lazy-image" data-src="images/greatjobstoday.jpg" alt="greatjobstoday website thumbnail">
-                        </a>
+                            <a href="http://greatjobstoday.net/cgi-bin/index.cgi" target="_blank" rel="noopener">
+                                <h3>GreatJobsToday Site</h3>
+                                <img class="js-lazy-image" data-src="images/greatjobstoday.jpg" alt="greatjobstoday website thumbnail">
+                            </a>
                         </div>
                         <figcaption>
-                        This is a popular local job site I developed the front-end for using HTML5, CSS3 & JavaScript.
+                            This is a popular local job site I developed the front-end for using HTML5, CSS3 & JavaScript.
                         </figcaption>
                     </figure>
 
                 </div>
 
-
             </div>
-            </section>
+        </section>
 
-            <article id="contactInfo">
-                <div id="mapContainer">
-                    <div id="mapSizer">
+        <article id="contactInfo">
+            <div id="mapContainer">
+                <div id="mapSizer">
                     <div id="pano">
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!4v1537740655772!6m8!1m7!1sC1bQnhj3FbDb0noIw3ylmA!2m2!1d40.26008289183893!2d-76.86739651509663!3f214.57943269971588!4f2.5027532826648695!5f0.7820865974627469" width="100%" height="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1537740655772!6m8!1m7!1sC1bQnhj3FbDb0noIw3ylmA!2m2!1d40.26008289183893!2d-76.86739651509663!3f214.57943269971588!4f2.5027532826648695!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen title="Street view of my location"></iframe>
 
                     </div>
                     <div id="map">
-                        
-                        <div style="width: 100%; height: 100%"><iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=408%20South%2013%20Street+(My%Apartment%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe></div><br/>
+
+                        <div style="width: 100%; height: 100%">
+                            <iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=408%20South%2013%20Street+(My%Apartment%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Map view of my location"><a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe>
+                        </div>
+                        <br/>
 
                     </div>
-                    </div>
                 </div>
-                <h2>Contact Information</h2>
-                <p>E-mail: tizzicboy@gmail.com
-                    <br>Cell: 732 789 0005</p>
+            </div>
+            <h2>Contact Information</h2>
+            <p>E-mail: tizzicboy@gmail.com
+                <br>Cell: 732 789 0005</p>
 
-                <div class="social-media">
-                    <!--this div has the social media icons-->
-                    <div class="facebook"><a href="https://www.facebook.com/pvrpavankumaar" target="_blank" rel="noopener" title="Link to Facebook page"><i class="fab fa-facebook-square"></i></a></div>
-                    <!--facebook-->
+            <div class="social-media">
+                <!--this div has the social media icons-->
+                <div class="facebook"><a href="https://www.facebook.com/pvrpavankumaar" target="_blank" rel="noopener" title="Link to Facebook page"><i class="fab fa-facebook-square"></i></a></div>
+                <!--facebook-->
 
-                    <div class="linkedin"><a href="https://www.linkedin.com/in/vasudevapitta" target="_blank" rel="noopener" title="Link to Linkedin page"><i class="fab fa-linkedin"></i></a></div>
-                    <!--linkedin-->
+                <div class="linkedin"><a href="https://www.linkedin.com/in/vasudevapitta" target="_blank" rel="noopener" title="Link to Linkedin page"><i class="fab fa-linkedin"></i></a></div>
+                <!--linkedin-->
 
-                    <div class="github"><a href="https://github.com/vasudevapitta" target="_blank" rel="noopener" title="Link to my Github page"><i class="fab fa-github-square"></i></a></div>
-                    <!--github-->
+                <div class="github"><a href="https://github.com/vasudevapitta" target="_blank" rel="noopener" title="Link to my Github page"><i class="fab fa-github-square"></i></a></div>
+                <!--github-->
 
-                    <div class="google"><a href="https://plus.google.com/u/0/+VasudevaPitta" target="_blank" rel="noopener" title="Link to Google plus page"><i class="fab fa-google-plus-square"></i></a></div>
-                    <!--google-->
-                </div>
-                <hr>
-                <div class='auditReport'>
-                    <h6>This website is coded using HTML5, CSS3, JS ES6 &amp; jQuery. Check out the audit report below</h6>
-                    <img src="images/auditReport.jpg" alt="audit report">
-                </div>
-            </article>
+                <div class="google"><a href="https://plus.google.com/u/0/+VasudevaPitta" target="_blank" rel="noopener" title="Link to Google plus page"><i class="fab fa-google-plus-square"></i></a></div>
+                <!--google-->
+            </div>
+            <hr>
+            <div class='auditReport'>
+                <h6>This website is coded using HTML5, CSS3, JS ES6 &amp; jQuery. Check out the audit report below</h6>
+                <img src="images/auditReport.jpg" alt="audit report">
+            </div>
+        </article>
         </section>
     </main>
     <div class="scrollup"><i class="fas fa-arrow-circle-up" title="Scroll to the Top" tabindex="0"></i></div>
     <footer id="footer">Copyright © 2018 Vasudeva Pitta. All rights reserved.</footer>
     <script type="application/javascript" charset="utf-8" src="js/mainForSw.js"></script>
     <script src="js/scripts.js"></script>
-<!--     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdTL2BZEXnt61oPQ4Oq2cg0eKFto009LQ&callback=initMap" async defer></script> -->
+    <!--     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdTL2BZEXnt61oPQ4Oq2cg0eKFto009LQ&callback=initMap" async defer></script> -->
 </body>
 
 </html>
