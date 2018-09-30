@@ -281,6 +281,10 @@ hr {
 	padding: 25px;
 }
 
+.verify {
+	cursor: default;
+}
+
 /* For iPad - Landscape mode and iPad Pro - Portrait mode*/
 @media screen and (min-width: 1000px) and (max-width: 1100px){
 
