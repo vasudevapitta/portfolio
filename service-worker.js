@@ -7,7 +7,7 @@ const allCacheURLs = [
 'index.html',
 'dist/js/scripts.js',
 'dist/js/mainForSw.js',
-'dist/css/styles.css',
+'dist/styles/style.css',
 'dist/images/logo1.svg',
 'dist/images/hero-img-1504w.jpg',
 'dist/images/ipad-hero-img-768w.jpg',
