@@ -9,7 +9,7 @@ const allCacheURLs = [
 'dist/js/mainForSw.js',
 'dist/styles/style.css',
 'dist/images/logo1.svg',
-'dist/images/mypic.png',
+'dist/images/mypic.jpg',
 'dist/images/restaurantReview.jpg',
 'dist/images/calculator.jpg',
 'dist/images/catclicker.jpg',
