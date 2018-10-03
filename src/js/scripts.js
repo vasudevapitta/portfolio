@@ -9,13 +9,6 @@ if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgen
 			            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
 			        }
 	    }
-
-
-	    $("#homeButton, .scrollup").click(function(){
-	    	$('html, body').animate({
-			scrollTop: $("#myDiv").offset().top
-			}, 2000);
-	    })
 }
 
 else  {
@@ -108,7 +101,18 @@ function myFunction() {
 }
 
 // Home Button Event handlers
-var hmeButtnScrllup = $("#homeButton, .scrollup");
+var hmeButtnScrllup = $("#homeButton");
+var Scrllup = $(".scrollup");
+
+Scrllup.click(function () {
+	scrollTop();
+});
+
+Scrllup.keypress(function (ev) {
+	if (ev.keyCode === 13 || 32) {
+		scrollTop();
+	}
+});
 
 hmeButtnScrllup.click(function () {
 	scrollTop();
