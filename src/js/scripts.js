@@ -1,55 +1,83 @@
-/*========================CODE FOR LAZY LOAD====================*/
-const images = document.querySelectorAll('.js-lazy-image');
-const config = {
-	// if the image gets within 50px in the Y axis, start the download.
-	rootMargin: '50px 0px',
-	threshold: 0.01
-};
+'use strict';
 
-if (!('IntersectionObserver' in window)) {
-	// no support for intersection observer, load the images immediately
-	Array.from(images).forEach(image => loadImage(image));
-} else {
 
-	// observer for the images on the page
-	var observer = new IntersectionObserver(onIntersection, config);
-	images.forEach(image => {
-		observer.observe(image);
-	});
+if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1))
+{
+		var allimages= document.getElementsByTagName('img');
+	    for (var i=0; i<allimages.length; i++) {
+			        if (allimages[i].getAttribute('data-src')) {
+			            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+			        }
+	    }
+
+
+	    $("#homeButton, .scrollup").click(function(){
+	    	$('html, body').animate({
+			scrollTop: $("#myDiv").offset().top
+			}, 2000);
+	    })
 }
 
-function onIntersection(entries) {
-	
-	// loop through the entries
-	entries.forEach(entry => {
-		
-		// are we in viewport?
-		if (entry.intersectionRatio > 0) {
+else  {
+        
+		/*========================CODE FOR LAZY LOAD====================*/
+		var images = document.querySelectorAll('.js-lazy-image');
+		var config = {
+			// if the image gets within 50px in the Y axis, start the download.
+			rootMargin: '50px 0px',
+			threshold: 0.01
+		};
 
-			// stop watching
-			observer.unobserve(entry.target);
-			
-			// load image
-			loadImage(entry.target);
+		if (!('IntersectionObserver' in window)) {
+			// no support for intersection observer, load the images immediately
+			Array.from(images).forEach(function (image) {
+				return loadImage(image);
+			});
+		} else {
+
+			// observer for the images on the page
+			var observer = new IntersectionObserver(onIntersection, config);
+			images.forEach(function (image) {
+				observer.observe(image);
+			});
 		}
-	});
-}
 
-function loadImage(e) {
-	e.src = e.dataset.src;
-	e.classList.add('fade-in');
-}
+		function onIntersection(entries) {
 
-/*========================END OF LAZY LOAD====================*/
+			// loop through the entries
+			entries.forEach(function (entry) {
+
+				// are we in viewport?
+				if (entry.intersectionRatio > 0) {
+
+					// stop watching
+					observer.unobserve(entry.target);
+
+					// load image
+					loadImage(entry.target);
+				}
+			});
+		}
+
+		function loadImage(e) {
+			e.src = e.dataset.src;
+			e.classList.add('fade-in');
+		}
+
+		/*========================END OF LAZY LOAD====================*/
+
+}
 
 // Opera 8.0+
-var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+var isOpera = !!window.opr && !!opr.addons || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 
 // Firefox 1.0+
 var isFirefox = typeof InstallTrigger !== 'undefined';
 
 // Safari 3.0+ "[object HTMLElementvarructor]" 
-var isSafari = /varructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+var isSafari = /varructor/i.test(window.HTMLElement) || function (p) {
+	return p.toString() === "[object SafariRemoteNotification]";
+}(!window['safari'] || typeof safari !== 'undefined' && safari.pushNotification);
 
 // Internet Explorer 6-11
 var isIE = /*@cc_on!@*/false || !!document.documentMode;
@@ -64,94 +92,95 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 //Sticky Navigation
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+	myFunction();
+};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky");
+	} else {
+		navbar.classList.remove("sticky");
+	}
 }
 
 // Home Button Event handlers
 var hmeButtnScrllup = $("#homeButton, .scrollup");
 
-hmeButtnScrllup.click(function(){
+hmeButtnScrllup.click(function () {
 	scrollTop();
 });
 
-hmeButtnScrllup.keypress(function(ev) {
-	if(ev.keyCode===13 || 32){
-	scrollTop();
+hmeButtnScrllup.keypress(function (ev) {
+	if (ev.keyCode === 13 || 32) {
+		scrollTop();
 	}
 });
 
-function scrollTop(){
-window.scroll({
-  top: 0, 
-  behavior: 'smooth' 
-});
+function scrollTop() {
+	window.scroll({
+		top: 0,
+		behavior: 'smooth'
+	});
 }
 
 // About Button Event handlers
 var abtMeBtn = $("#aboutMeButton");
 
-abtMeBtn.click(function() {
+abtMeBtn.click(function () {
 	scrollAbout();
 });
 
-abtMeBtn.keypress(function(ev) {
-	if(ev.keyCode===13 || 32){
-	scrollAbout();
+abtMeBtn.keypress(function (ev) {
+	if (ev.keyCode === 13 || 32) {
+		scrollAbout();
 	}
 });
 
-function scrollAbout(){
-		document.querySelector('#aboutScroll').scrollIntoView({ 
-		  behavior: 'smooth' 
-		});
+function scrollAbout() {
+	document.querySelector('#aboutScroll').scrollIntoView({
+		behavior: 'smooth'
+	});
 }
-
 
 // Portfolio Button Event handlers
 var prtflioBtn = $("#portfolioButton");
 
-prtflioBtn.click(function() {
+prtflioBtn.click(function () {
 	scrollPortfolio();
 });
 
-prtflioBtn.keypress(function(ev) {
-	if(ev.keyCode===13 || 32){
-	$('.one').focus();
-	scrollPortfolio();
+prtflioBtn.keypress(function (ev) {
+	if (ev.keyCode === 13 || 32) {
+		$('.one').focus();
+		scrollPortfolio();
 	}
 });
 
-function scrollPortfolio(){
-		document.querySelector('#portfolioScroll').scrollIntoView({ 
-		  behavior: 'smooth'
-		});
+function scrollPortfolio() {
+	document.querySelector('#portfolioScroll').scrollIntoView({
+		behavior: 'smooth'
+	});
 }
 
 // Contact Button Event handlers
 var cntctBtn = $("#contactButton");
 
-cntctBtn.click(function() {
+cntctBtn.click(function () {
 	scrollContact();
 });
 
-cntctBtn.keypress(function(ev) {
-	if(ev.keyCode===13 || 32){
-	scrollContact();
+cntctBtn.keypress(function (ev) {
+	if (ev.keyCode === 13 || 32) {
+		scrollContact();
 	}
 });
 
-function scrollContact(){
-			document.querySelector('#contactInfo').scrollIntoView({ 
-		  	behavior: 'smooth' 
-			});
+function scrollContact() {
+	document.querySelector('#contactInfo').scrollIntoView({
+		behavior: 'smooth'
+	});
 }
