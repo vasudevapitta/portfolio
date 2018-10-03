@@ -1,0 +1,1 @@
+navigator.serviceWorker&&(console.log("service worker supported"),window.addEventListener("load",()=>{navigator.serviceWorker.register("service-worker.js",{scope:"https://vasudevapitta.github.io/portfolio/"}).then(()=>{console.log("serviceWorker is registered")}).catch(a=>{console.log(`serviceWorker is NOT registered: ${a}`)})}));
