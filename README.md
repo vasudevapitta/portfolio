@@ -1,5 +1,5 @@
 # New-Responsive-Portfolio
-[Link to Live Project](https://vasudevapitta.github.io/New-Responsive-Portfolio/)
+[Link to Live Project](https://vasudevapitta.github.io/portfolio/)
 
 This is my Responsive Portfolio Website Project I did during the Google Nanodegree Program. I used HTML5 semantic elements with simple, clean yet enjoyable layout and with minimal amount of fonts and color palette. I made the DOM compact without too many child elements or nesting which avoids complex reflow and repaint.
  
@@ -20,6 +20,6 @@ I added comments for myself and other people who read my code.
 I used jQuery with the latest ES6 syntax in JavaScript.
 
 
-Check out the [project live](https://vasudevapitta.github.io/New-Responsive-Portfolio/)
+Check out the [project live](https://vasudevapitta.github.io/portfolio/)
 
 Thanks! :)
